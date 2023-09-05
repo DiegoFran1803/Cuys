@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Corazon</title>
+    <title>Doctor Corazón</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Doctor Corazon</a>
+            <a class="navbar-brand" href="#">Doctor Corazón</a>
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <h1 class="text-center mt-3">¿Todavia lo Quieres?</h1>
+            <h1 class="text-center mt-3">¿Todavía lo Quieres?</h1>
 
             <div class="question1 mb-5">
-                <h4>1. Te sientes mejor sol@ o en una relacion</h4>
+                <h4>1. Te sientes mejor sol@ o en una relación</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check1" id="option1" checked value="1">
                     <label class="form-check-label" for="option1">
@@ -30,7 +30,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check1" id="option2" value="2">
                     <label class="form-check-label" for="option2">
-                        En una relacion
+                        En una relación
                     </label>
                 </div>
                 <div class="form-check">
@@ -48,7 +48,7 @@
             </div>
 
             <div class="question2 my-5">
-                <h4>2. Asi no funcione una relacion lo intentarias 100 veces mas</h4>
+                <h4>2. Asi no funcione una relación lo intentarías 100 veces mas</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check2" id="option1" checked value="1">
                     <label class="form-check-label" for="option1">
@@ -70,7 +70,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check2" id="option4" value="4">
                     <label class="form-check-label" for="option4">
-                        No me gusta la musica mexicana
+                        No me gusta la música mexicana
                     </label>
                 </div>
             </div>
@@ -104,7 +104,7 @@
             </div>
 
             <div class="question4 my-5">
-                <h4>4. Volverias con tu ex-pareja</h4>
+                <h4>4. Volverías con tu ex-pareja</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check4" id="option1" checked value="1">
                     <label class="form-check-label" for="option1">
@@ -142,13 +142,13 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check5" id="option2" >
                     <label class="form-check-label" for="option2">
-                        Me encantan, perdonaria a cualquiera que me traiga mariachis
+                        Me encantan, perdonaría a cualquiera que me traiga mariachis
                     </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check5" id="option3">
                     <label class="form-check-label" for="option3">
-                        No, les tiraria caca, odio odio odio y mas odio...
+                        No, les tiraría caca, odio odio odio y mas odio...
                     </label>
                 </div>
                 <div class="form-check">
@@ -160,11 +160,11 @@
             </div>
 
             <div class="question6 mt-5">
-                <h4>5. Sabes entender indirectas y guardas secretos</h4>
+                <h4>6. Sabes entender indirectas y guardas secretos</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check6" id="option1" checked value="1">
                     <label class="form-check-label" for="option1">
-                        Si, entendi la referencia y jujui la lora
+                        Si, entendí la referencia y jujui la lora
                     </label>
                 </div>
                 <div class="form-check">
@@ -182,7 +182,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="check6" id="option4" value="4">
                     <label class="form-check-label" for="option4">
-                        Estan castigados
+                        Están castigados
                     </label>
                 </div>
             </div>
@@ -219,6 +219,12 @@
             if(check == 1) resultados[0]++;
             else if(check == 2) resultados[1]++;
             else if(check == 3) resultados[2]++;
+            else if(check == 4) resultados[3]++;
+
+            check = $('input:radio[name=check5]:checked').val();
+            if(check == 1) resultados[0]++;
+            else if(check == 2) resultados[0]++;
+            else if(check == 3) resultados[3]++;
             else if(check == 4) resultados[3]++;
 
             check = $('input:radio[name=check6]:checked').val();
